@@ -1,0 +1,16 @@
+{
+  "name": "agent-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Agent CLI with Claude API integration",
+  "main": "agent-cli.js",
+  "scripts": {
+    "start": "node agent-cli.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
