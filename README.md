@@ -9,10 +9,32 @@ A JavaScript ES6 agent CLI that connects to the Claude API and implements an age
 - Multi-turn conversation support
 - Interactive and example modes
 
-## Setup
+## Quick Start with npx
 
-1. Install dependencies:
 ```bash
+# Run directly with npx (no installation needed)
+npx @imgly/prototype-agent-loop
+```
+
+## Usage Example
+
+When prompted, select option 2 for interactive mode and enter:
+```
+Please run ping localhost and when you received ping response then run echo with the result
+```
+
+This will demonstrate:
+1. The agent using the `ping` tool to check localhost
+2. Processing the ping result
+3. Using the `echo` tool to report the result
+4. Complete logging of all API interactions
+
+## Setup for Development
+
+1. Clone and install:
+```bash
+git clone https://github.com/imgly/prototype-agent-loop.git
+cd prototype-agent-loop
 npm install
 ```
 
@@ -25,9 +47,11 @@ npm install
      - Make sure you're signed in: `op signin`
      - The CLI will automatically fetch the key
 
-3. Run the CLI:
+3. Run locally:
 ```bash
 npm start
+# or
+node agent-cli.js
 ```
 
 ## Logging

@@ -1,9 +1,12 @@
 {
-  "name": "agent-cli",
+  "name": "@imgly/prototype-agent-loop",
   "version": "1.0.0",
   "type": "module",
   "description": "Agent CLI with Claude API integration",
   "main": "agent-cli.js",
+  "bin": {
+    "agent-loop": "./agent-cli.js"
+  },
   "scripts": {
     "start": "node agent-cli.js"
   },
@@ -12,5 +15,9 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imgly/prototype-agent-loop.git"
   }
 }

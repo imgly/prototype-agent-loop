@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import Anthropic from '@anthropic-ai/sdk';
 import readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process';
